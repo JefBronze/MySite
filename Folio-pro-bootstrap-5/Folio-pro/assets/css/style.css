@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   background: #ffffff;
-  color: #59cee2;
+  color: #898989;
   font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -51,7 +51,7 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #ffffff;
+  color: #999999;
   line-height: 28px;
 }
 
@@ -61,7 +61,7 @@ p {
 }
 
 ::selection {
-  background: #dad5ce;
+  background: #b8a07e;
   color: #fff;
 }
 
@@ -151,7 +151,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #05d1d8;
+  background: #b8a07e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -199,7 +199,7 @@ p {
   color: #898989;
 }
 #header .logo img {
-  max-height: 83px;
+  max-height: 40px;
 }
 @media (max-width: 992px) {
   #header {
@@ -244,7 +244,7 @@ p {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #11d0d6;
+  color: #b8a07e;
 }
 .navbar .dropdown ul {
   display: block;
@@ -356,7 +356,7 @@ p {
   color: #4b4a4a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #0faaaf;
+  color: #b8a07e;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -392,7 +392,7 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/laketahoe.jpg") repeat scroll center center/cover;
+  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -418,8 +418,7 @@ p {
   font-size: 13px;
   letter-spacing: 3px;
   margin-top: 0;
-  margin-left: 3px;
-  margin-bottom: 400px;
+  margin-bottom: 30px;
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
@@ -493,13 +492,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #010d11;
+  background: #f7f7f7;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #09a1d0;
+  border: 20px solid #b8a07e;
 }
 
 #about .div-img-bg .about-img img {
@@ -528,7 +527,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #010d11;
+  background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
 }
@@ -537,7 +536,7 @@ p {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #faf8f8;
+  color: #292929;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -552,7 +551,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #0bb7ce;
+  color: #b8a07e;
   line-height: 44px;
 }
 
@@ -599,7 +598,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #09b6dd;
+  color: #b8a07e;
 }
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -974,16 +973,16 @@ blockquote {
   background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #7ea8b8;
+  border-left: 4px solid #b8a07e;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000000;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #footer .socials-media {
@@ -1013,7 +1012,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #7ea8b8;
+  color: #b8a07e;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1026,7 +1025,7 @@ blockquote {
 }
 
 .credits {
-  font-size: 20px;
+  font-size: 13px;
 }
 
 /** Width between 1200x to 0
