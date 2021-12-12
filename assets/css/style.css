@@ -566,10 +566,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #ffffff;
 }
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #12d6e4;
 }
 
 /*--------------------------------------------------------------
