@@ -1163,29 +1163,7 @@ a {
   letter-spacing: inherit !important;
   text-transform: inherit !important;
 }
-.u-logo {
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  text-decoration: none;
-  border: 0 none transparent;
-  outline-width: 0;
-  background-color: transparent;
-  margin: 0;
-  -webkit-text-decoration-skip: objects;
-}
-.u-image.u-logo {
-  display: table;
-  white-space: nowrap;
-}
-.u-image.u-logo img {
-  display: block;
-}
+
 .u-form-horizontal {
   display: flex;
   flex-flow: row;
