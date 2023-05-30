@@ -41340,7 +41340,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 80px;
+  min-height: 10px;
 }
 
 .u-header .u-image-1 {
@@ -41350,8 +41350,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-logo-image-1 {
-  width: 100%;
-  height: 100%;
+  max-height: 83px;
 }
 
 .u-header .u-menu-1 {
