@@ -1,0 +1,10 @@
+.image-container {
+    position: relative;
+    /* Add other styles as needed */
+}
+
+.image-container p {
+    position: absolute;
+    top: 0;
+    /* Add other styles as needed */
+}
