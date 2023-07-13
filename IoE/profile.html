@@ -11,7 +11,9 @@
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
   <!--favicon-->
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
   <!-- simplebar CSS-->
   <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
@@ -27,7 +29,7 @@
   
 </head>
 
-<body class="bg-theme bg-theme1">
+<body class="bg-theme bg-theme2">
 
 <!-- start loader -->
    <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
@@ -40,7 +42,7 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="index.html">
-       <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+       <img src="./assets/images/cross.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Dashtreme Admin</h5>
      </a>
    </div>
@@ -52,17 +54,17 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="icons.html">
           <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
         </a>
-      </li>
+      </li> -->
 
-      <li>
+      <!-- <li>
         <a href="forms.html">
           <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>
         </a>
-      </li>
+      </li> -->
 
       <li>
         <a href="tables.html">
@@ -70,12 +72,12 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="calendar.html">
           <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
           <small class="badge float-right badge-light">New</small>
         </a>
-      </li>
+      </li> -->
 
       <li>
         <a href="profile.html">
@@ -83,22 +85,27 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="login.html" target="_blank">
           <i class="zmdi zmdi-lock"></i> <span>Login</span>
         </a>
-      </li>
+      </li> -->
 
-       <li>
+       <!-- <li>
         <a href="register.html" target="_blank">
           <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
         </a>
-      </li>
+      </li> -->
 	  
-      <li class="sidebar-header">LABELS</li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li>
+      <li class="sidebar-header">SOURCES</li>
+      <li><a href="javaScript:void();"><i class="fa fa-sun-o" aria-hidden="true" style="color: orange;"></i>
+        <span>Solar</span></a></li>
+      <li><a href="javaScript:void();"><i class="fa fa-recycle" aria-hidden="true" style="color: rgb(14, 210, 20);"></i>
+        <span>Biogas</span></a></li>
+      <li><a href="javaScript:void();"><i class="fa fa-tint" aria-hidden="true" style="color: rgb(31, 39, 210);"></i>
+        <span>Diesel</span></a></li>
+      <li><a href="javaScript:void();"><i class="fa fa-bug" aria-hidden="true" style="color: rgb(206, 5, 5);"></i>
+        <span>Gas</span></a></li>
 
     </ul>
    
@@ -114,16 +121,16 @@
        <i class="icon-menu menu-icon"></i>
      </a>
     </li>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <form class="search-bar">
         <input type="text" class="form-control" placeholder="Enter keywords">
          <a href="javascript:void();"><i class="icon-magnifier"></i></a>
       </form>
-    </li>
+    </li> -->
   </ul>
      
   <ul class="navbar-nav align-items-center right-nav-link">
-    <li class="nav-item dropdown-lg">
+    <!-- <li class="nav-item dropdown-lg">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
       <i class="fa fa-envelope-open-o"></i></a>
     </li>
@@ -139,23 +146,23 @@
           <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
           <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
         </ul>
-    </li>
+    </li> -->
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-        <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+        <span class="user-profile"><img src="./assets/images/user.JPG" class="img-circle" alt="user avatar"></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-right">
        <li class="dropdown-item user-details">
         <a href="javaScript:void();">
            <div class="media">
-             <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
+             <div class="avatar"><img class="align-self-start mr-3" src="./assets/images/user.JPG" alt="user avatar"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
-            <p class="user-subtitle">mccoy@example.com</p>
+            <h6 class="mt-2 user-title">Jeferson Bronze</h6>
+            <p class="user-subtitle">jefersonbronze@gmail.com</p>
             </div>
            </div>
           </a>
-        </li>
+        <!-- </li>
         <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
         <li class="dropdown-divider"></li>
@@ -165,7 +172,7 @@
         <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
       </ul>
-    </li>
+    </li> -->
   </ul>
 </nav>
 </header>
@@ -180,16 +187,16 @@
         <div class="col-lg-4">
            <div class="card profile-card-2">
             <div class="card-img-block">
-                <img class="img-fluid" src="https://via.placeholder.com/800x500" alt="Card image cap">
+                <img class="img-fluid" src="../assets/img/IoE/MonkeyAIextended.png" alt="Card image cap">
             </div>
             <div class="card-body pt-5">
-                <img src="https://via.placeholder.com/110x110" alt="profile-image" class="profile">
-                <h5 class="card-title">Mark Stern</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <img src="./assets/images/user.JPG" alt="profile-image" class="profile">
+                <h5 class="card-title">Jeferson Bronze</h5>
+                <p class="card-text">This dashboard serves only to illustrate the real tool I created to manage my distributed energy assets.</p>
                 <div class="icon-block">
-                  <a href="javascript:void();"><i class="fa fa-facebook bg-facebook text-white"></i></a>
-				  <a href="javascript:void();"> <i class="fa fa-twitter bg-twitter text-white"></i></a>
-				  <a href="javascript:void();"> <i class="fa fa-google-plus bg-google-plus text-white"></i></a>
+                  <a href="https://br.linkedin.com/in/jefersonbronze?trk=profile-badge"><i class="fa fa-linkedin bg-linkedin text-white"></i></a>
+				  <a href="https://github.com/JefBronze"> <i class="fa fa-github bg-github text-white"></i></a>
+				  <!-- <a href="javascript:void();"> <i class="fa fa-google-plus bg-google-plus text-white"></i></a> -->
                 </div>
             </div>
 
@@ -221,10 +228,10 @@
                   </div>
                    <hr>
                   <div class="media align-items-center">
-                   <div><img src="assets/images/timeline/angular-icon.svg" class="skill-img" alt="skill img"></div>
+                   <div><img src="./assets/images/nodejs.png" class="skill-img" alt="skill img"></div>
                      <div class="media-body text-left ml-3">
                        <div class="progress-wrapper">
-                         <p>AngularJS <span class="float-right">70%</span></p>
+                         <p>NodeJS <span class="float-right">70%</span></p>
                          <div class="progress" style="height: 5px;">
                           <div class="progress-bar" style="width:70%"></div>
                          </div>
@@ -233,10 +240,10 @@
                   </div>
                     <hr>
                   <div class="media align-items-center">
-                   <div><img src="assets/images/timeline/react.svg" class="skill-img" alt="skill img"></div>
+                   <div><img src="./assets/images/python.png" class="skill-img" alt="skill img"></div>
                      <div class="media-body text-left ml-3">
                        <div class="progress-wrapper">
-                         <p>React JS <span class="float-right">35%</span></p>
+                         <p>Python<span class="float-right">35%</span></p>
                          <div class="progress" style="height: 5px;">
                           <div class="progress-bar" style="width:35%"></div>
                          </div>
@@ -256,12 +263,12 @@
                 <li class="nav-item">
                     <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Profile</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Messages</span></a>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
-                </li>
+                </li> -->
             </ul>
             <div class="tab-content p-3">
                 <div class="tab-pane active" id="profile">
@@ -270,25 +277,25 @@
                         <div class="col-md-6">
                             <h6>About</h6>
                             <p>
-                                Web Designer, UI/UX Engineer
+                                Energy Engineer, Software Developer
                             </p>
                             <h6>Hobbies</h6>
                             <p>
-                                Indie music, skiing and hiking. I love the great outdoors.
+                                Surf, soccer and snowboarding. I love Ben&Jerry's ice cream.
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <h6>Recent badges</h6>
+                            <h6>Programming Skills</h6>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">html5</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">react</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">codeply</a>
-                            <a href="javascript:void();" class="badge badge-dark badge-pill">angularjs</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">javascript</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">python</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">nodejs</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">css3</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">jquery</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">bootstrap</a>
                             <a href="javascript:void();" class="badge badge-dark badge-pill">responsive-design</a>
                             <hr>
-                            <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
+                            <span class="badge badge-primary"><i class="fa fa-user"></i> 90 Followers</span>
                             <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
                             <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
                         </div>
@@ -299,27 +306,27 @@
                                 <tbody>                                    
                                     <tr>
                                         <td>
-                                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                                            <strong>Jeferson</strong> edited Alex client profile page <strong>`Clients`</strong>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                            <strong>Jeferson</strong> deleted Main Table in <strong>`Client = Alex`</strong>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
+                                            <strong>Jeferson</strong> commented in <strong>`Discussions`</strong>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                            <strong>Jeferson</strong> included 3 new rows in Table 2 <strong>`Client = Sérgio`</strong>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
+                                            <strong>Jeferson</strong> deleted last 4 entries from <strong>`Batteries`</strong>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -468,7 +475,7 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
+          Copyright © 2023 Jeferson Bronze
         </div>
       </div>
     </footer>
