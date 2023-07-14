@@ -38,8 +38,8 @@ a {
 
 .tm-navbar-menu {
   display: block;
-  color: black;
-  background: white;
+  color: rgb(0, 248, 17);
+  background: rgb(0, 0, 0);
   padding: 10px 20px;
   margin-bottom: 18px;
   width: 95px;
@@ -49,7 +49,7 @@ a {
 }
 
 .tm-navbar-menu:hover {
-  color: #950000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ a {
 .tm-nav-link:hover,
 .tm-nav-link:focus {
   text-decoration: none;
-  color: #950000;
+  color: #0aee21;
 }
 
 .tm-bg-dark {
@@ -95,7 +95,7 @@ a {
 }
 
 .tm-site-subtitle {
-  color: #cdffd0;
+  color: #15ec23;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -172,6 +172,7 @@ a {
 
 footer {
   font-weight: 300;
+  color: #0fcd05;
   margin-bottom: 30px;
   margin-left: 40px;
   font-size: 0.95rem;
