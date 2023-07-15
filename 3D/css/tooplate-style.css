@@ -121,7 +121,7 @@ a {
 .tm-textbox {
   padding: 45px;
   font-size: 1.1rem;
-  color: #c5c7c6;
+  color: #04f110;
   line-height: 1.8;
 }
 
@@ -204,7 +204,7 @@ footer {
 
 .slick-dots li:hover,
 .slick-dots li.slick-active {
-  background-color: #a20015;
+  background-color: #18ec05;
 }
 
 .slick-dots li:hover a:not([href]):not([tabindex]),
