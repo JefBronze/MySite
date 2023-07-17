@@ -21,7 +21,7 @@ a {
 }
 
 .tm-text-blue {
-  color: #00ccfc;
+  color: #ffffff;
 }
 
 .tm-main-container {
@@ -307,7 +307,7 @@ footer {
 /*-----------------*/
 
 figure.effect-goliath {
-  background: #df4e4e;
+  background: #2a2a2a00;
 }
 
 figure.effect-goliath img,
