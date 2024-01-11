@@ -1,2 +1,16 @@
+# Custom error document
 ErrorDocument 404 /404.html
+
+# Redirect match rule
 RedirectMatch 404 ^/Dev/.*$
+
+# Deny access to .htaccess
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Optionally deny access to browserconfig.xml
+# <Files "browserconfig.xml">
+#     Require all denied
+# </Files>
+
