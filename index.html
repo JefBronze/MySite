@@ -50,6 +50,9 @@
   <!-- Font for the Let's Connect Neon and flickering banner -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
+  <!-- Sweet Alert for my Message on the SEND button on the Form -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -307,15 +310,30 @@
       })
         .then(response => {
           if (response.ok) {
-            alert('Message sent successfully!');
+            Swal.fire({
+              title: 'Success!',
+              text: 'Your message has been sent successfully.',
+              icon: 'success',
+              confirmButtonText: 'OK'
+            });
             document.getElementById('submit-form').reset(); // Reset form after successful submission
           } else {
-            alert('There was a problem with your submission. Please try again.');
+            Swal.fire({
+              title: 'Error!',
+              text: 'There was a problem with your submission. Please try again.',
+              icon: 'error',
+              confirmButtonText: 'OK'
+            });
           }
         })
         .catch(error => {
           console.error('Error:', error);
-          alert('An error occurred while sending the message.');
+          Swal.fire({
+            title: 'Error!',
+            text: 'An error occurred while sending the message.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
         });
     });
   </script>

@@ -50,6 +50,9 @@
   <!-- Font for the Let's Connect Neon and flickering banner -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
+  <!-- Sweet Alert for my Message on the SEND button on the Form -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -252,11 +255,12 @@
       <div class="container">
         <div class="contact-block1">
           <div class="row">
+            <!-- Personal Information Column -->
             <div class="col-lg-6">
-              <div id="teste" class="contact-contact">
+              <div class="contact-contact">
                 <h2 class="mb-30">Contact</h2>
                 <ul class="contact-details">
-                  <li><span>Montréal - Québec - Canada</span></li>
+                  <li><span>Montreal - Quebec - Canada</span></li>
                   <li><span>+1 (438) 979-6085</span></li>
                   <li><span>jefersonbronze@gmail.com</span></li>
                   <a href="https://github.com/JefBronze" target="_blank" title="Meu GitHub"><i
@@ -266,22 +270,32 @@
                   <a href="https://br.linkedin.com/in/jefersonbronze?trk=profile-badge" target="_blank"
                     title="Meu LinkedIn"><i style="margin-right: 0.5em; color: #a2afaf;" class="bi bi-linkedin"></i></a>
                 </ul>
-                <ul class="spotify-details"></ul>
-                <!-- <iframe style="border-radius:12px"
-                  src="https://open.spotify.com/embed/playlist/512h606orxd4OCr5H6yZKY?utm_source=generator" width="100%"
-                  height="248" frameborder="0" allowfullscreen=""
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
               </div>
             </div>
+
+            <!-- Contact Form Column -->
             <div class="col-lg-6">
-              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-              <div class="elfsight-app-8ff5fec6-46d1-42aa-a6c0-7e1f38c18937"></div>
+              <h2 class="mb-4">Envoyez-moi un message</h2>
+              <form id="submit-form">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Votre e-mail" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" rows="10" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer le message</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Contact Section -->
+
+    <!-- <div class="col-lg-6">
+              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+              <div class="elfsight-app-8ff5fec6-46d1-42aa-a6c0-7e1f38c18937"></div>
+            </div> -->
   </main>
   <!-- End #main -->
 
@@ -305,6 +319,51 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- Form Handling -->
+  <script>
+    document.getElementById('submit-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      fetch('https://boovpbj14c.execute-api.us-east-1.amazonaws.com/prod/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email, message: message }),
+      })
+        .then(response => {
+          if (response.ok) {
+            Swal.fire({
+              title: 'Succès!',
+              text: 'Votre message a été envoyé avec succès.',
+              icon: 'success',
+              confirmButtonText: 'OK'
+            });
+            document.getElementById('submit-form').reset(); // Reset form after successful submission
+          } else {
+            Swal.fire({
+              title: 'Erreur!',
+              text: 'Il y a eu un problème avec votre soumission. Veuillez réessayer.',
+              icon: 'error',
+              confirmButtonText: 'OK'
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          Swal.fire({
+            title: 'Erreur!',
+            text: 'Une erreur s\'est produite pendant l\'envoi du message.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
+        });
+    });
+  </script>
 </body>
 
 </html>
