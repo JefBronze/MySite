@@ -1060,7 +1060,7 @@ blockquote {
 
 .credits {
   font-size: 20px;
-  color: #f0ececc0
+  color: #f0ececc0;
 }
 
 .highlight {
@@ -1396,6 +1396,64 @@ blockquote {
     display: inline-block;
   }
 }
+
+/* Neon text effect with flickering */
+.neon-text {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300; /* Light weight */
+  font-style: italic; /* Italic style */
+  color: #fff; /* White text color */
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2196f3,
+    /* Blue glow */ 0 0 30px #2196f3, 0 0 40px #2196f3, 0 0 55px #2196f3,
+    0 0 75px #2196f3;
+  animation: flickerAnimation 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flickerAnimation {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2196f3, 0 0 30px #2196f3,
+      0 0 40px #2196f3, 0 0 55px #2196f3, 0 0 75px #2196f3;
+    color: #fff;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    color: #666; /* Dimmed color */
+  }
+}
+
+/* Additional styling for the divider-section for better visibility of the neon effect */
+.divider-section {
+  background: #000; /* Dark background for better contrast */
+  padding: 80px 0;
+}
+
+.divider-section h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.divider-section p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.highlight-text {
+  font-size: 20px; /* Larger text size */
+  line-height: 1.5;
+  font-weight: bold; /* Make it bolder */
+  color: #ffffff; /* Change color, if desired */
+}
+
 /** Width between 320px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
