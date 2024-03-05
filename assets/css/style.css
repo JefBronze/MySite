@@ -1454,6 +1454,32 @@ blockquote {
   color: #ffffff; /* Change color, if desired */
 }
 
+#contact-form {
+  padding: 2rem 0;
+}
+
+#contact-form .form-control {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#contact-form .btn-primary {
+  background-color: #0056b3;
+  border-color: #004094;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#contact-form .btn-primary:hover {
+  background-color: #004094;
+}
+
+#message {
+  height: 200px; /* Adjust the height as needed */
+}
+
 /** Width between 320px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
