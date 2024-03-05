@@ -1060,6 +1060,11 @@ blockquote {
 
 .credits {
   font-size: 20px;
+  color: #f0ececc0
+}
+
+.highlight {
+  color: #09a1d0;
 }
 
 /** Width between 1200x to 0
