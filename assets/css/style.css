@@ -638,17 +638,17 @@ p {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(6, 95, 228, 0.735);
   padding: 15px;
 }
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #666;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 10px;
 }
 #portfolio .portfolio-item .portfolio-info p {
-  color: #999;
+  color: #ffffff;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -1154,6 +1154,7 @@ blockquote {
     display: inline-block;
   }
 }
+
 /** Width between 767px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -1363,6 +1364,16 @@ blockquote {
     margin-left: calc(0% - 0px);
   }
 
+  #about .div-img-bg .about-img video {
+    margin-top: 0%;
+    margin-left: calc(200% - 0px);
+  }
+
+  #animatedVideo {
+    margin-top: 0%;
+    margin-left: calc(200% - 0px);
+  }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
@@ -1525,6 +1536,11 @@ blockquote {
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+  }
+
+  #about .div-img-bg .about-img video {
+    margin-top: 50%;
+    margin-left: calc(50% - 40px);
   }
 
   #about .about-descr .p-heading {
