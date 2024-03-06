@@ -305,7 +305,7 @@
       var email = document.getElementById('email').value;
       var message = document.getElementById('message').value;
 
-      fetch('https://boovpbj14c.execute-api.us-east-1.amazonaws.com/prod/submit-form', {
+      fetch('https://sthadi3igj.execute-api.us-east-1.amazonaws.com/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -342,46 +342,46 @@
     });
   </script>
 
-<script>
-  let timer;
+  <script>
+    let timer;
 
-  function isElementVisible(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function switchToVideo() {
-    document.getElementById('staticImage').style.display = 'none';
-    var video = document.getElementById('animatedVideo');
-    video.style.display = 'block';
-    video.play();
-  }
-
-  function resetToImage() {
-    clearTimeout(timer);
-    var video = document.getElementById('animatedVideo');
-    video.pause();
-    video.currentTime = 0;
-    video.style.display = 'none';
-    document.getElementById('staticImage').style.display = 'block';
-  }
-
-  function checkAboutSection() {
-    var aboutSection = document.getElementById('about');
-    if (isElementVisible(aboutSection)) {
-      timer = setTimeout(switchToVideo, 5000); // 5000 milliseconds = 5 seconds
-    } else {
-      resetToImage();
+    function isElementVisible(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
-  }
 
-  window.addEventListener('scroll', checkAboutSection);
-</script>
+    function switchToVideo() {
+      document.getElementById('staticImage').style.display = 'none';
+      var video = document.getElementById('animatedVideo');
+      video.style.display = 'block';
+      video.play();
+    }
+
+    function resetToImage() {
+      clearTimeout(timer);
+      var video = document.getElementById('animatedVideo');
+      video.pause();
+      video.currentTime = 0;
+      video.style.display = 'none';
+      document.getElementById('staticImage').style.display = 'block';
+    }
+
+    function checkAboutSection() {
+      var aboutSection = document.getElementById('about');
+      if (isElementVisible(aboutSection)) {
+        timer = setTimeout(switchToVideo, 5000); // 5000 milliseconds = 5 seconds
+      } else {
+        resetToImage();
+      }
+    }
+
+    window.addEventListener('scroll', checkAboutSection);
+  </script>
 
 </body>
 
