@@ -555,7 +555,7 @@ p {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #09a1d0;
+  border: 20px solid #010d11;
 }
 
 /* Unified Image and Video Styling */
@@ -581,7 +581,6 @@ p {
   margin-bottom: 0;
   text-align: left;
 }
-
 
 /*--------------------------------------------------------------
 # Services
@@ -1528,6 +1527,25 @@ blockquote {
 
 #message {
   height: 200px; /* Adjust the height as needed */
+}
+
+/* Responsive adjustments for devices with a width of up to 600px */
+@media (max-width: 600px) {
+  #contact-form .form-control,
+  #contact-form .btn-primary {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: auto; /* Ensure inputs and buttons expand to fit the container */
+    font-size: 16px; /* Increase font size for better readability on small screens */
+  }
+
+  #contact-form {
+    padding: 1rem 0; /* Reduce the padding on smaller screens */
+  }
+
+  #message {
+    height: 150px; /* Adjust the textarea height for small screens */
+  }
 }
 
 /** Width between 320px to 0
