@@ -38,7 +38,7 @@ a {
 
 .tm-navbar-menu {
   display: block;
-  color: rgb(0, 248, 17);
+  color: rgb(0, 170, 248);
   background: rgb(0, 0, 0);
   padding: 10px 20px;
   margin-bottom: 18px;
@@ -76,7 +76,7 @@ a {
 .tm-nav-link:hover,
 .tm-nav-link:focus {
   text-decoration: none;
-  color: #0aee21;
+  color: #009dff;
 }
 
 .tm-bg-dark {
@@ -95,7 +95,7 @@ a {
 }
 
 .tm-site-subtitle {
-  color: #15ec23;
+  color: #009dff;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -172,7 +172,7 @@ a {
 
 footer {
   font-weight: 300;
-  color: #0fcd05;
+  color: #009dff;
   margin-bottom: 30px;
   margin-left: 40px;
   font-size: 0.95rem;
@@ -204,7 +204,7 @@ footer {
 
 .slick-dots li:hover,
 .slick-dots li.slick-active {
-  background-color: #18ec05;
+  background-color: #009dff;
 }
 
 .slick-dots li:hover a:not([href]):not([tabindex]),
@@ -472,7 +472,7 @@ figure.effect-goliath:hover p {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3ce50d;
+  border-top-color: #009dff;
 
   -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
