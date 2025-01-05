@@ -511,7 +511,7 @@ p {
 /*-----------------------------------------------------------------------------------*/
 /*  About
 /*-----------------------------------------------------------------------------------*/
-#about {
+/* #about {
   width: 100%;
   height: auto;
   background: #010d11;
@@ -541,6 +541,43 @@ p {
 
 #about .about-descr .separator {
   max-width: 80%;
+  margin-bottom: 0;
+  text-align: left;
+} */
+
+/* About Section Base Styles */
+#about {
+  width: 100%;
+  height: auto;
+  background: #010d11;
+  padding-top: 100px;
+}
+
+#about .div-img-bg {
+  padding-bottom: 30px;
+  border: 20px solid #010d11;
+}
+
+/* Unified Image and Video Styling */
+#about .div-img-bg .about-img img,
+#about .div-img-bg .about-img video {
+  width: 100%;
+  /* height: 400px; Adjust based on your requirement */
+  object-fit: cover;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px; /* Adjust if necessary */
+  margin-left: 0; /* Ensures alignment */
+}
+
+/* Description Text Styling */
+#about .about-descr .p-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  text-align: left;
+}
+
+#about .about-descr .separator {
+  max-width: 80%; /* Adjust based on your design */
   margin-bottom: 0;
   text-align: left;
 }
@@ -638,17 +675,17 @@ p {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(6, 95, 228, 0.735);
   padding: 15px;
 }
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #666;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 10px;
 }
 #portfolio .portfolio-item .portfolio-info p {
-  color: #999;
+  color: #ffffff;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -1107,7 +1144,7 @@ blockquote {
   }
 
   /* About */
-  .head-info .header-content .cmaster h1 {
+  /* .head-info .header-content .cmaster h1 {
     font-size: 32px;
   }
 
@@ -1127,7 +1164,7 @@ blockquote {
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
+  } */
 
   /* portfolio */
   #portfolio .portfolio-list .nav li {
@@ -1154,6 +1191,7 @@ blockquote {
     display: inline-block;
   }
 }
+
 /** Width between 767px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -1188,7 +1226,7 @@ blockquote {
   }
 
   /* About */
-  .head-info .header-content h1 {
+  /* .head-info .header-content h1 {
     font-size: 32px;
   }
 
@@ -1208,7 +1246,7 @@ blockquote {
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
+  } */
 
   /* portfolio */
   #portfolio .portfolio-list .nav li {
@@ -1235,6 +1273,7 @@ blockquote {
     display: inline-block;
   }
 }
+
 /** Width between 600px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -1269,7 +1308,7 @@ blockquote {
   }
 
   /* About */
-  .head-info .header-content h1 {
+  /* .head-info .header-content h1 {
     font-size: 32px;
   }
 
@@ -1289,7 +1328,7 @@ blockquote {
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
+  } */
 
   /* portfolio */
   #portfolio .portfolio-list .nav li {
@@ -1350,7 +1389,7 @@ blockquote {
   }
 
   /* About */
-  .head-info .header-content h1 {
+  /* .head-info .header-content h1 {
     font-size: 32px;
   }
 
@@ -1363,6 +1402,16 @@ blockquote {
     margin-left: calc(0% - 0px);
   }
 
+  #about .div-img-bg .about-img video {
+    margin-top: 0%;
+    margin-left: calc(200% - 0px);
+  }
+
+  #animatedVideo {
+    margin-top: 0%;
+    margin-left: calc(200% - 0px);
+  }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
@@ -1370,7 +1419,7 @@ blockquote {
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
+  } */
 
   /* portfolio */
   #portfolio .portfolio-list .nav li {
@@ -1480,6 +1529,25 @@ blockquote {
   height: 200px; /* Adjust the height as needed */
 }
 
+/* Responsive adjustments for devices with a width of up to 600px */
+@media (max-width: 600px) {
+  #contact-form .form-control,
+  #contact-form .btn-primary {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: auto; /* Ensure inputs and buttons expand to fit the container */
+    font-size: 16px; /* Increase font size for better readability on small screens */
+  }
+
+  #contact-form {
+    padding: 1rem 0; /* Reduce the padding on smaller screens */
+  }
+
+  #message {
+    height: 150px; /* Adjust the textarea height for small screens */
+  }
+}
+
 /** Width between 320px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -1513,7 +1581,7 @@ blockquote {
     display: block;
   }
 
-  /* About */
+  /* About
   .head-info .header-content h1 {
     font-size: 32px;
   }
@@ -1527,6 +1595,11 @@ blockquote {
     margin-left: calc(0% - 0px);
   }
 
+  #about .div-img-bg .about-img video {
+    margin-top: 50%;
+    margin-left: calc(50% - 40px);
+  }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
@@ -1534,7 +1607,7 @@ blockquote {
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
+  } */
 
   /* portfolio */
   #portfolio .portfolio-list .nav li {
